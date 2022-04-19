@@ -30,3 +30,5 @@
 
 // console.log(isChecked || isClose);
 
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', "");
+console.log(numberOfFilms);
