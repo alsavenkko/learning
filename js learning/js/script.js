@@ -48,3 +48,4 @@ const a = prompt('Один из последних просмотреных фи
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
+console.log(personalMovieDB);
