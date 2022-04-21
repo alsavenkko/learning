@@ -88,3 +88,77 @@
 //         console.log('Not today');
 //         break;
 // }
+
+// const hamburger = true;
+// const fries = false;
+
+// if (hamburger && fries) {
+//     console.log('Я сыт!');
+// } else {
+//     console.log('Я голоден!');
+// }
+
+// console.log((hamburger && fries));
+
+// const hamburger = 5;
+// const fries = 0;
+
+// if (hamburger && fries) {
+//     console.log('Я сыт!');
+// } else {
+//     console.log('Я голоден!');
+// }
+
+// console.log((hamburger && fries));
+
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+
+// if (hamburger === 3 && cola === 1 && fries) {
+//     console.log('Все сыты!');
+// } else {
+//     console.log('Мы уходим!');
+// }
+
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+
+// console.log(hamburger === 3 && cola && fries);
+// Оператор && выводит первое значение false или последнее значение truе в условии
+
+// console.log(1 && 0);  // 0 потому что это значение false
+// console.log(1 && 5); // 5 потому что это последнее значение true
+// console.log(null && 5); // null это ничего и поэтому будет значение false (null в консоли)
+// console.log(0 && 'qwqwqdqwdqw'); // 0 потому что 0 это не правда 
+
+// && - это и, || - это или
+
+// const hamburger = 3;
+// const fries = 0;
+// const cola = 0;
+
+// if (hamburger || cola || fries) {
+//     console.log('Все сыты!');
+// } else {
+//     console.log('Мы уходим!');
+// }
+
+// let johnReport, samReport, alexReport, mariaReport = 'done';
+
+// console.log(johnReport || samReport || alexReport || mariaReport);
+
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+
+// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+//     console.log('Все сыты!');
+// } else {
+//     console.log('Мы уходим!');
+// }
+
+// console.log(!0);
+
