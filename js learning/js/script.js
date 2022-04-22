@@ -182,7 +182,7 @@
 //         // break;
 //         continue;
 //     }
-    
+
 //     console.log(i);
 // }
 
@@ -197,7 +197,7 @@
 // const lenght = 7;
 
 // for(let i = 1; i < lenght; i++) {
-    
+
 //     for(let j = 0; j < i; j++) {
 //         result += '*';
 //     }
@@ -217,3 +217,73 @@
 //         }
 //     }
 // }
+
+// Упражнения по написанию кода
+
+function firstTask() {
+
+    for (let i = 5; i < 11; i++) {
+
+        console.log(i);
+    }
+}
+
+firstTask();
+
+function secondTask() {
+
+    for (let i = 20; i >= 10; i--) {
+
+        if (i === 13) {
+            break;
+        }
+        console.log(i);
+    }
+}
+
+secondTask();
+
+function thirdTask() {
+
+    for (let i = 2; i <= 10; i++) {
+
+        if (i % 2 == 0) {
+            console.log(i);
+        }
+    }
+}
+
+thirdTask();
+
+function fourthTask() {
+    let i = 2;
+
+    while (i <= 16) {
+        if (i % 2 === 0) {
+            i++;
+            continue;
+        } else {
+            console.log(i);
+        }
+        i++;
+    }
+}
+
+fourthTask ();
+
+fourthTask();
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+
+    for (let i = 5; i < 11; i++) {
+        arrayOfNumbers[i - 5] = i;
+    }
+
+    console.log(arrayOfNumbers);
+    return arrayOfNumbers;
+}
+
+fifthTask();
+
+// Упражнения по написанию кода
