@@ -220,70 +220,127 @@
 
 // Упражнения по написанию кода
 
-function firstTask() {
+// function firstTask() {
 
-    for (let i = 5; i < 11; i++) {
+//     for (let i = 5; i < 11; i++) {
 
-        console.log(i);
-    }
-}
+//         console.log(i);
+//     }
+// }
 
-firstTask();
+// firstTask();
 
-function secondTask() {
+// function secondTask() {
 
-    for (let i = 20; i >= 10; i--) {
+//     for (let i = 20; i >= 10; i--) {
 
-        if (i === 13) {
-            break;
-        }
-        console.log(i);
-    }
-}
+//         if (i === 13) {
+//             break;
+//         }
+//         console.log(i);
+//     }
+// }
 
-secondTask();
+// secondTask();
 
-function thirdTask() {
+// function thirdTask() {
+//     for (let i = 2; i <= 10; i++) {
+//         if (i % 2 === 0) {
+//             console.log(i);
+//         }
+//     }
+// }
 
-    for (let i = 2; i <= 10; i++) {
+// thirdTask();
 
-        if (i % 2 == 0) {
-            console.log(i);
-        }
-    }
-}
+// function fourthTask() {
+//     let i = 2;
 
-thirdTask();
+//     while (i <= 16) {
+//         if (i % 2 === 0) {
+//             i++;
+//             continue;
+//         } else {
+//             console.log(i);
+//         }
+//         i++;
+//     }
+// }
 
-function fourthTask() {
-    let i = 2;
+// fourthTask();
 
-    while (i <= 16) {
-        if (i % 2 === 0) {
-            i++;
-            continue;
-        } else {
-            console.log(i);
-        }
-        i++;
-    }
-}
+// function fifthTask() {
+//     const arrayOfNumbers = [];
 
-fourthTask ();
+//     for (let i = 5; i < 11; i++) {
+//         arrayOfNumbers[i - 5] = i;
+//     }
 
-fourthTask();
+//     console.log(arrayOfNumbers);
+//     return arrayOfNumbers;
+// }
 
-function fifthTask() {
-    const arrayOfNumbers = [];
+// fifthTask();
 
-    for (let i = 5; i < 11; i++) {
-        arrayOfNumbers[i - 5] = i;
-    }
+// function firstTask() {
+//     const arr = [3, 5, 8, 16, 20, 23, 50];
+//     const result = [];
 
-    console.log(arrayOfNumbers);
-    return arrayOfNumbers;
-}
+//     for (let i = 0; i < arr.length; i++) {
+//         result[i] = arr[i];
+//     }
+    
+//     console.log(result);
+    
+//     return result;
+// }
 
-fifthTask();
+// firstTask();
 
+// function secondTask() {
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+//     for (let i = 0; i < data.length; i++) {
+//         if (typeof(data[i]) === 'number') {
+//             data[i] = data[i] * 2;
+//         } else if (typeof(data[i]) === 'string') {
+//             data[i] = `${data[i]} - done`;
+//         }
+//     }
+
+//     console.log(data);
+//     return data;
+// }
+
+// secondTask();
+
+// function thridTask() {
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     const result = [];
+
+//     for (let i = 1; i <= data.length; i++) {
+//         result[i - 1] = data[data.length - i];
+//     }
+
+//     console.log(result);
+
+//     return result;
+// }
+
+// thridTask();
+
+// const lines = 5;
+// let result = '';
+
+// for (let i = 0; i <= lines; i++) {
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
+// }
+
+// console.log(result);
 // Упражнения по написанию кода
