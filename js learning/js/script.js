@@ -381,3 +381,68 @@
 //console.log(personalMovieDB);
 
 // Улучшеное консольное приложение
+
+// function showFirstMessage(text) {
+//     console.log(text);
+// }
+
+// showFirstMessage('Hello world');
+
+// function calc(a, b) {
+//     return (a + b);
+// }
+
+// console.log(calc(5, 5));
+// console.log(calc(3, 3));
+// console.log(calc(2, 2));
+
+// function ret() {
+//     let num = 50;
+    
+//     //
+
+//     return num;
+// }
+
+// const anotherNum = ret();
+
+// console.log(anotherNum);
+
+// const logger = function() {
+//     console.log("Hello");
+// };
+
+// logger();
+
+// const calc = (a, b) => a + b;
+
+// const calc = (a, b) => {
+//     console.log('1');
+//     return a + b;
+// };
+
+// const usdCurr = 28;
+// const eurCurr = 32;
+// const discount = 0.9;
+
+// function convert(amount, curr) {
+//     return curr * amount;
+// }
+
+// function promotion(result) {
+//     console.log(result * discount);
+// }
+
+// const res = convert(100, usdCurr);
+
+// promotion(res);
+
+// function test() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//         if (i === 3) {return;}
+//     }
+//     console.log('Done');
+// }
+// test();
+
