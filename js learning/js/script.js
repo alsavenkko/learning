@@ -357,70 +357,70 @@
 
 // Улучшеное консольное приложение
 
-let numberOfFilms;
+// let numberOfFilms;
 
-function start() {
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', "");
+// function start() {
+//     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', "");
 
-    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', "");
-    }
-}
+//     while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+//         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', "");
+//     }
+// }
 
-start();
+// start();
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-function rememberMyFilms() {
-    for (let i = 0; i < 2; i++) {
-        const a = prompt('Один из последних просмотреных фильмов?', ''),
-              b = prompt('На сколько оцените его?', '');
+// function rememberMyFilms() {
+//     for (let i = 0; i < 2; i++) {
+//         const a = prompt('Один из последних просмотреных фильмов?', ''),
+//               b = prompt('На сколько оцените его?', '');
         
-        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-            personalMovieDB.movies[a] = b;
-        } else {
-            i--;
-        }  
-    }
-}
+//         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//             personalMovieDB.movies[a] = b;
+//         } else {
+//             i--;
+//         }  
+//     }
+// }
 
-rememberMyFilms();
+// rememberMyFilms();
 
-function detectPersonalLevel() {
-    if (personalMovieDB.count < 10) {
-        console.log('Просмотрено довольно мало фильмов');
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-        console.log('Вы классический зритель');
-    } else if (personalMovieDB.count >= 30) {
-        console.log('Вы киноман');
-    } else {
-        console.log('Произошла ошибка');
-    }
-}
+// function detectPersonalLevel() {
+//     if (personalMovieDB.count < 10) {
+//         console.log('Просмотрено довольно мало фильмов');
+//     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//         console.log('Вы классический зритель');
+//     } else if (personalMovieDB.count >= 30) {
+//         console.log('Вы киноман');
+//     } else {
+//         console.log('Произошла ошибка');
+//     }
+// }
 
-detectPersonalLevel();
+// detectPersonalLevel();
 
-function showMyDB(hidden) {
-    if (!hidden) {
-        console.log(personalMovieDB);
-    }
-}
+// function showMyDB(hidden) {
+//     if (!hidden) {
+//         console.log(personalMovieDB);
+//     }
+// }
 
-showMyDB(personalMovieDB.privat);
+// showMyDB(personalMovieDB.privat);
 
-function writeYourGenres() {
-    for (let i = 1; i <= 3; i++) {
-        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
-    }
-}
+// function writeYourGenres() {
+//     for (let i = 1; i <= 3; i++) {
+//         personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+//     }
+// }
 
-writeYourGenres();
+// writeYourGenres();
 
 // Улучшеное консольное приложение
 
@@ -547,3 +547,103 @@ writeYourGenres();
 // console.log(parseInt(test));
 // console.log(parseFloat(test));
 
+// function calculateVolumeAndArea(lenght) {
+//     if (typeof(lenght) !== 'number' || lenght < 0 || !Number.isInteger(lenght)) {
+//         return "При вычислении произошла ошибка";
+//     }
+
+//     let area = 0,
+//         volume = 0;
+    
+//     volume = lenght * lenght * lenght;
+//     area = 6 * (lenght * lenght);
+
+//     return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+// }
+
+// calculateVolumeAndArea(5);
+
+// function getCoupeNumber(seatNumber) {
+//     if (typeof(seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+//         return 'Ошибка. Проверте правильность введенного номера места';
+//     }
+
+//     if (seatNumber === 0 || seatNumber > 36) {
+//         return 'Таких мест в вагоне не существует';
+//     }
+
+//     for ( let i = 4; i < 36; i + 4) {
+//         if (seatNumber <= i) {
+//             return Math.ceil(i / 4);
+//         }
+//     }
+// }
+
+// getCoupeNumber(33);
+
+// function getTimeFromMinutes(minutesTotal) {
+//     if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
+//         return 'Ошибка, проверьте данные';
+//     }
+
+//     const hours = Math.floor(minutesTotal / 60);
+//     const minutes = minutesTotal % 60;
+
+//     let hoursStr = '';
+
+//     switch(hours) {
+//         case 0:
+//             hoursStr = 'часов';
+//             break;
+//         case 1:
+//             hoursStr = 'час';
+//             break;
+//         case 2:
+//         case 3:
+//         case 4:
+//             hoursStr = 'часа';
+//             break;
+//         default:
+//             hoursStr = 'часов';
+//     }
+
+//     return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+// }
+// getTimeFromMinutes(180);
+
+// function findMaxNumber(a, b, c, d) {
+//     if (typeof(a) !== 'number' ||
+//         typeof(b) !== 'number' ||
+//         typeof(c) !== 'number' ||
+//         typeof(d) !== 'number') {
+//             return 0;
+//         } else {
+//             return Math.max(a, b, c, d);
+//         }
+// }
+// findMaxNumber(1, 2, 5, 10);
+
+// function fib(num) {
+//     if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+//         return '';
+//     }
+
+//     let result = '';
+//     let first = 0;
+//     let second = 1;
+
+//     for (let i = 0; i < num; i++) {
+        
+//         if (i + 1 === num) {
+//             result += `${first}`;
+//         } else {
+//             result += `${first} `;
+//         }
+
+//         let third = first + second;
+//         first = second;
+//         second = third;
+//     }
+//     return result;
+// }
+// fib(4);
